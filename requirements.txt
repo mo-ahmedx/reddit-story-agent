@@ -1,5 +1,5 @@
 praw
-google-generativeai
+google-genai
 prisma
 python-telegram-bot
 apscheduler
