@@ -1,0 +1,6 @@
+praw
+google-generativeai
+prisma
+python-telegram-bot
+apscheduler
+python-dotenv

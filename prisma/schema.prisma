@@ -1,0 +1,19 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = 5
+}
+
+model SentStory {
+    id        Int      @id @default(autoincrement())
+    reddit_id String   @unique
+    title     String
+    score     Int
+    subreddit String
+    url       String
+    created_at DateTime @default(now())
+}
